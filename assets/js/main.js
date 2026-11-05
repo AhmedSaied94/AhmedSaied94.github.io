@@ -16,6 +16,30 @@
     });
   }
 
+  // Theme: saved choice wins; otherwise follow the system setting.
+  var root = document.documentElement;
+  var themeBtn = document.querySelector('.theme-toggle');
+  var mq = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+  function currentTheme() {
+    return root.getAttribute('data-theme') || (mq && mq.matches ? 'dark' : 'light');
+  }
+  function syncLabel() {
+    if (!themeBtn) return;
+    var next = currentTheme() === 'dark' ? 'light' : 'dark';
+    themeBtn.setAttribute('aria-label', 'Switch to ' + next + ' theme');
+    themeBtn.setAttribute('title', 'Switch to ' + next + ' theme');
+  }
+  if (themeBtn) {
+    themeBtn.addEventListener('click', function () {
+      var next = currentTheme() === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+      syncLabel();
+    });
+    if (mq && mq.addEventListener) mq.addEventListener('change', syncLabel);
+    syncLabel();
+  }
+
   var year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 
