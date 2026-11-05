@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ahmed Saied — Senior Python Backend Developer</title>
+<meta name="description" content="Ahmed Saied, Senior Full Stack Python Developer in Alexandria, Egypt. Django, DRF, Celery, PostgreSQL, Docker and Kubernetes. Builder of the STA API Gateway.">
+<meta property="og:title" content="Ahmed Saied — Senior Python Backend Developer">
+<meta property="og:description" content="I design backend systems — and keep them running. Django, APIs, Kubernetes.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ahmedsaied94.github.io/">
+<meta name="theme-color" content="#F5F6F8">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans+Arabic:wght@500;600&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="#top">
+      <span class="brand-name">Ahmed Saied</span>
+      <span class="brand-role">BACKEND ENGINEER</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <a href="#cases">Case studies</a>
+      <a href="#projects">Projects</a>
+      <a href="#services">Services</a>
+      <a href="#experience">Experience</a>
+      <a class="btn btn-accent btn-sm" href="#contact">Let's talk</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section id="top" class="hero wrap">
+  <div class="hero-copy">
+    <p class="eyebrow">SENIOR FULL STACK PYTHON DEVELOPER · ALEXANDRIA, EG</p>
+    <h1>I design backend systems — and keep them running.</h1>
+    <p class="lead">5+ years building Django platforms. Right now that means the API gateway that serves the Saudi Tourism Authority, and the internal platform its employees use every day.</p>
+    <div class="actions">
+      <a class="btn btn-dark" href="#cases">Read the case studies</a>
+      <a class="btn btn-light" href="assets/Ahmed-Saied-CV.pdf" download>Download CV</a>
+    </div>
+    <p class="status"><span class="dot" aria-hidden="true"></span>Open to freelance projects and the right full-time role</p>
+  </div>
+
+  <figure class="diagram">
+    <figcaption>FIG. 1 — STA API GATEWAY, SIMPLIFIED</figcaption>
+    <div class="diagram-row">
+      <ul class="nodes">
+        <li>Mobile apps</li>
+        <li>Web platforms</li>
+        <li>Partner systems</li>
+      </ul>
+      <svg class="arrow" viewBox="0 0 40 24" aria-hidden="true"><path d="M2 12H36M28 4l8 8-8 8"/></svg>
+      <div class="core">
+        <span class="mono accent">single secure entry point</span>
+        <strong>Django gateway</strong>
+        <span>Routing · auth &amp; tokens · rate limiting · validation · central logging — on Kubernetes</span>
+        <span class="core-tag">replaced 24 MuleSoft modules</span>
+      </div>
+      <svg class="arrow" viewBox="0 0 40 24" aria-hidden="true"><path d="M2 12H36M28 4l8 8-8 8"/></svg>
+      <ul class="nodes">
+        <li>Internal services</li>
+        <li>Oracle &amp; enterprise</li>
+        <li>MOFA eVisa &amp; third parties</li>
+      </ul>
+    </div>
+  </figure>
+</section>
+
+<section id="cases" class="band band-white">
+  <div class="wrap stack">
+    <div class="section-head">
+      <p class="eyebrow">CASE STUDIES</p>
+      <h2>Production systems I own</h2>
+    </div>
+    <div class="grid-2">
+      <article class="card case">
+        <p class="eyebrow">01 · DESIGNED &amp; BUILT · GLOBANT</p>
+        <h3>STA API Gateway</h3>
+        <dl>
+          <div><dt>Problem</dt><dd>The Saudi Tourism Authority's APIs lived in a legacy MuleSoft application split across 24 separate modules.</dd></div>
+          <div><dt>What I did</dt><dd>Re-implemented it as one maintainable Python gateway: request routing, authentication and token management, rate limiting, and request/response validation across downstream systems.</dd></div>
+          <div><dt>Outcome</dt><dd>One secure entry point to internal and third-party services, with centralised logging, monitoring and error handling — deployed on Docker and Kubernetes. The MOFA eVisa integration went live on it in October 2026.</dd></div>
+        </dl>
+        <ul class="tags"><li>Django</li><li>DRF</li><li>Celery</li><li>PostgreSQL</li><li>Nginx</li><li>Kubernetes</li></ul>
+      </article>
+      <article class="card case">
+        <p class="eyebrow">02 · BACKEND · STA EMPLOYEES APP</p>
+        <h3>STA Employees System</h3>
+        <dl>
+          <div><dt>Problem</dt><dd>Employees had to work across several enterprise systems to raise a request or find their data.</dd></div>
+          <div><dt>What I did</dt><dd>Built an integration platform over Agile, Oracle and Exchange (EWS), with a mobile app for employees and a CMS admin panel for request types, fields and configuration.</dd></div>
+          <div><dt>Outcome</dt><dd>One interface for request creation and data retrieval, tuned with Celery and PgBouncer for performance at scale.</dd></div>
+        </dl>
+        <ul class="tags"><li>Django</li><li>DRF</li><li>Wagtail</li><li>Celery</li><li>PgBouncer</li><li>Docker</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="wrap stack section">
+  <div class="section-head">
+    <p class="eyebrow">MY OWN APPS</p>
+    <h2>Things I build after hours</h2>
+    <p class="section-sub">Designed, built and run end to end — app, backend and infrastructure.</p>
+  </div>
+  <div class="grid-2">
+    <article class="card app">
+      <div class="app-head">
+        <div>
+          <h3>Wassal Ogra</h3>
+          <p class="ar" lang="ar" dir="rtl">وصّل الأجرة</p>
+        </div>
+        <span class="pill">Mobile game · in development</span>
+      </div>
+      <p>A casual puzzle game where you drive a Cairo microbus: collect fares as they're passed forward seat by seat, hand back exact change before each stop, and save up to furnish an apartment and get married. Launching on Android in Egypt first.</p>
+      <ul class="tags"><li>Flutter</li><li>Flame</li><li>Riverpod</li><li>Django</li><li>DRF</li><li>Celery</li><li>PostgreSQL</li><li>Redis</li></ul>
+      <div class="app-links"><span class="soon">Website coming soon</span><a class="link" href="privacy.html#wassal-en">Privacy policy →</a></div>
+    </article>
+    <article class="card app">
+      <div class="app-head">
+        <div>
+          <h3>Madar Sat</h3>
+          <p class="ar" lang="ar" dir="rtl">مدار سات</p>
+        </div>
+        <span class="pill">Live · PWA &amp; Android</span>
+      </div>
+      <p>Shows which channel, satellite and frequency carry each football match. Pick your satellites, follow what you care about, and get push alerts — no account needed. Runs as an installable web app and on Android.</p>
+      <ul class="tags"><li>Flutter</li><li>PWA</li><li>FastAPI</li><li>Redis</li><li>Firebase</li><li>Docker</li></ul>
+      <div class="app-links"><a class="btn btn-accent btn-sm" href="https://madar-sat.web.app/" target="_blank" rel="noopener">Open the web app ↗</a><a class="link" href="privacy.html#madar-en">Privacy policy →</a></div>
+    </article>
+  </div>
+
+  <h3 class="sub-head">Selected client work</h3>
+  <div class="grid-4">
+    <a class="card mini" href="https://eshtarek.app/" target="_blank" rel="noopener">
+      <h4>Eshtarek</h4>
+      <p>Multi-tenant subscription management platform.</p>
+      <span class="mono">Django · DRF · React · Celery</span>
+    </a>
+    <a class="card mini" href="https://tree-code.com/" target="_blank" rel="noopener">
+      <h4>Treecode</h4>
+      <p>Multi-tenant shipping management software.</p>
+      <span class="mono">Django · DRF · React · Docker</span>
+    </a>
+    <div class="card mini">
+      <h4>Sand Beach</h4>
+      <p>Nursery management and activity booking — parent, cashier, teacher and admin apps, multi-branch.</p>
+      <span class="mono">Django · React · Redux Toolkit</span>
+    </div>
+    <div class="card mini">
+      <h4>IFF</h4>
+      <p>Validates and audits consumer financial reports, converting them to .DLT files by role.</p>
+      <span class="mono">Django · DRF · Next.js · Celery</span>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="band band-white">
+  <div class="wrap stack">
+    <div class="section-head">
+      <p class="eyebrow">SERVICES</p>
+      <h2>What I can do for you</h2>
+    </div>
+    <div class="grid-4">
+      <div class="card service"><span class="mono accent">A</span><h3>API design &amp; gateways</h3><p>Contracts, auth, routing and rate limits for APIs other teams depend on — including migrations off legacy platforms.</p></div>
+      <div class="card service"><span class="mono accent">B</span><h3>Django platforms</h3><p>From models to background jobs, with SSO, CMS admin and enterprise integrations like Oracle and Exchange.</p></div>
+      <div class="card service"><span class="mono accent">C</span><h3>Cloud &amp; Kubernetes</h3><p>Containerised deploys on OCI or AWS, with CI/CD pipelines your team can run without me.</p></div>
+      <div class="card service"><span class="mono accent">D</span><h3>Production rescue</h3><p>Slow queries, dropped DB connections, failing health checks — found, fixed and documented.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="wrap stack section">
+  <div class="section-head">
+    <p class="eyebrow">EXPERIENCE</p>
+    <h2>Where I've shipped</h2>
+  </div>
+  <ol class="timeline">
+    <li>
+      <p class="when mono">12/2025 — now</p>
+      <div>
+        <h3>Senior Full Stack Python Developer · <a href="https://www.globant.com/" target="_blank" rel="noopener">Globant</a></h3>
+        <p class="where">Riyadh · remote</p>
+        <p>Designed and built the STA Gateway and continue to develop the Saudi Tourism Authority Employees App. Run the containerised services on Kubernetes and launched the MOFA eVisa integration in October 2026.</p>
+      </div>
+    </li>
+    <li>
+      <p class="when mono">05/2025 — 12/2025</p>
+      <div>
+        <h3>Senior Full Stack Python Developer · <a href="https://2p.com.sa/ar" target="_blank" rel="noopener">Perfect Presentation</a></h3>
+        <p class="where">Cairo branch, STA project · Smart Village</p>
+        <p>Django and React applications for STA, Docker Compose environments and Celery task processing.</p>
+      </div>
+    </li>
+    <li>
+      <p class="when mono">12/2022 — 05/2025</p>
+      <div>
+        <h3>Senior Full Stack Developer · <a href="https://inovola.co.uk/" target="_blank" rel="noopener">Inovola</a></h3>
+        <p class="where">Cairo</p>
+        <p>Secure, high-performance Django and React applications; containerisation and performance work.</p>
+      </div>
+    </li>
+    <li>
+      <p class="when mono">06/2022 — 04/2025</p>
+      <div>
+        <h3>Full Stack Developer · <a href="https://div-systems.com/" target="_blank" rel="noopener">Div Systems</a></h3>
+        <p class="where">Cairo</p>
+        <p>Django and React products including Sand Beach and IFF, with Celery for async processing.</p>
+      </div>
+    </li>
+    <li>
+      <p class="when mono">12/2021 — 07/2022</p>
+      <div>
+        <h3>Full Stack Developer · Mostaqel</h3>
+        <p class="where">Cairo</p>
+        <p>Django and React web applications with responsive, intuitive interfaces.</p>
+      </div>
+    </li>
+  </ol>
+
+  <div class="grid-2 facts">
+    <div class="card">
+      <h3>Skills</h3>
+      <dl class="skills">
+        <div><dt>Backend</dt><dd>Python, Django, Django REST Framework, FastAPI, Celery, Wagtail, Node.js, Express, NestJS</dd></div>
+        <div><dt>Data</dt><dd>PostgreSQL, PgBouncer, Redis</dd></div>
+        <div><dt>Infra</dt><dd>Docker, Docker Compose, Kubernetes, Oracle Cloud, AWS, Nginx, Apache, Linux, GitHub Actions</dd></div>
+        <div><dt>Frontend</dt><dd>React, Next.js, Redux Toolkit, Tailwind, Flutter</dd></div>
+      </dl>
+    </div>
+    <div class="card">
+      <h3>Education</h3>
+      <ul class="edu">
+        <li><strong>Full Stack Development (Open-Source Python)</strong><span>ITI, Ministry of Communications and IT · Alexandria · 2021</span></li>
+        <li><strong>B.Com, Accounting — Very Good</strong><span>Alexandria University · 2016</span></li>
+      </ul>
+      <h3 class="langs-head">Languages</h3>
+      <p>Arabic (native) · English</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap contact-row">
+    <div class="contact-copy">
+      <h2>Hiring, or have a project?</h2>
+      <p>Tell me what you're building and where it hurts. Email is fastest.</p>
+      <a class="contact-mail" href="mailto:ahmed.saeed311294@gmail.com">ahmed.saeed311294@gmail.com</a>
+      <ul class="contact-links">
+        <li><a href="https://www.linkedin.com/in/ahmed-saied94/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/AhmedSaied94" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://wa.link/u55712" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="assets/Ahmed-Saied-CV.pdf" download>CV (PDF)</a></li>
+      </ul>
+    </div>
+    <form class="contact-form" id="contact-form">
+      <label>Name<input name="name" type="text" autocomplete="name" required></label>
+      <label>Email<input name="email" type="email" autocomplete="email" required></label>
+      <label>What do you need?<textarea name="message" rows="5" required></textarea></label>
+      <button class="btn btn-accent" type="submit">Send via email</button>
+      <p class="form-note">Opens your email app with the message filled in.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <span>© <span id="year">2026</span> Ahmed Saied · Alexandria, Egypt</span>
+    <a href="privacy.html">App privacy policy</a>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
